@@ -17,20 +17,6 @@ rl.question('Enter your mnemonic phrase:', function(mnemonic){
         var seed = bip39.mnemonicToSeed(mnemonic);
         var bitcoinNetwork = bitcoin.networks.bitcoin;
 
-
-        bitcoinNetwork =   {
-            messagePrefix: '\x1ABitcoin Signed Message:\n',
-            bech32: 'bc',
-            bip32: {
-                public: 0x0488b21e,
-                private: 0x0488ade4
-            },
-            pubKeyHash: 0x05,
-            scriptHash: 0x05,
-            wif: 0x80
-        };
-
-
         var hdMaster = bitcoin.HDNode.fromSeedBuffer(seed, bitcoinNetwork);
 
         for(i=0;i<10;i++){
