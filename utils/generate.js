@@ -7,10 +7,18 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-rl.question('Enter your mnemonic phrase:', function(mnemonic){
+rl.question('Enter your mnemonic phrase or xpub key:', function(mnemonic){
 
     if(!bip39.validateMnemonic(mnemonic)){
-        console.log('WARNING! Your mnemonics is bad!')
+
+        var hdNode = bitcoin.HDNode.fromBase58(mnemonic);
+
+        for(i=0;i<10;i++){
+            var path = '0/'+i;
+            var key1 = hdNode.derivePath(path);
+            console.log(path + ": "+key1.keyPair.getAddress());
+        }
+
     }else{
         console.log("Generating addresses for mnemonics: "+ mnemonic);
 
@@ -20,8 +28,9 @@ rl.question('Enter your mnemonic phrase:', function(mnemonic){
         var hdMaster = bitcoin.HDNode.fromSeedBuffer(seed, bitcoinNetwork);
 
         for(i=0;i<10;i++){
-            var key1 = hdMaster.derivePath('m/44\'/0\'/0\'/0/'+i);
-            console.log(key1.keyPair.getAddress());
+            var path = '0/'+i;
+            var key1 = hdMaster.derivePath('m/44\'/0\'/0\'/'+path);
+            console.log(path + ": "+key1.keyPair.getAddress());
         }
     }
 
