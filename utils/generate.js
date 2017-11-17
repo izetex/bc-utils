@@ -12,6 +12,7 @@ rl.question('Enter your mnemonic phrase or xpub key:', function(mnemonic){
     if(!bip39.validateMnemonic(mnemonic)){
 
         var hdNode = bitcoin.HDNode.fromBase58(mnemonic);
+        console.log("Generating addresses for pubkey: "+ mnemonic);
 
         for(i=0;i<10;i++){
             var path = '0/'+i;

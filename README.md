@@ -17,7 +17,7 @@ It generates many addresses from mnemonics
 
 ````
 $ node utils/generate.js
-Enter your mnemonic phrase:traffic used dial lens keen birth surprise clean rookie horse jar fiber
+Enter your mnemonic phrase or xpub key:traffic used dial lens keen birth surprise clean rookie horse jar fiber
 Generating addresses for mnemonics: traffic used dial lens keen birth surprise clean rookie horse jar fiber
 35oWRUGEbpyCYkQPD5mrjU3YzVmjNBZw3G
 3AGiX8nfxnpX4aFCGWGrggxPMNgDTxa9TH
@@ -29,6 +29,27 @@ Generating addresses for mnemonics: traffic used dial lens keen birth surprise c
 32hDYQRJ1vNYSjkW4NV4pw2vZNASogB8et
 3BAMeJCFkRkArqZNacFGbtTmYrRa9drGpw
 3Q5S4DvreHHcrVuzofhpuapj7dQm9yawe7
+````
+
+## Generate many Bitcoin addresses from xpub Public key
+
+Use node utils/generate.js command. 
+It generates many addresses from xpub public key
+
+````
+$ node utils/generate.js
+Enter your mnemonic phrase or xpub key:xpub6ASuArnXKPbfEVRpCesNx4P939HDXENHkksgxsVG1yNp9958A33qYoPiTN9QrJmWFa2jNLdK84bWmyqTSPGtApP8P7nHUYwxHPhqmzUyeFG
+Generating addresses for pubkey: xpub6ASuArnXKPbfEVRpCesNx4P939HDXENHkksgxsVG1yNp9958A33qYoPiTN9QrJmWFa2jNLdK84bWmyqTSPGtApP8P7nHUYwxHPhqmzUyeFG
+0/0: 195EkFatkMf65BiCFrr1LMFAuquxx6JcJQ
+0/1: 1LtD46KjEZcr4b28JJ5AoNHDE1eAtuWjSX
+0/2: 1HjoBCnJxuuJTG5TVXAp8pQvKGY77d6AtE
+0/3: 1NntKK9xAeNFgsbwvHouFWEiJrozGUjeHp
+0/4: 1DvuU2ht6LHJ48boE4jzWzhRqYot9MBtBJ
+0/5: 1Kvz85SAwLc1p37P3zifoWw2A7sVcLzzJn
+0/6: 1PFqsGemmCGALtPzZPF36jx4cY5XbPcpdM
+0/7: 1NL8LB6VXuqEFv3cbEHXS767mwjnc1oqab
+0/8: 1Firydd61wghVfb1YxR9wQwCiPjFJdtd2H
+0/9: 12CJyHdCAvLDbCbnNe8S6ZCYN8Wc9LtvkW
 ````
 
 ## Generate random Ethereum wallet address and key
