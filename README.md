@@ -40,7 +40,6 @@ It generates many addresses from xpub public key
 $ node utils/generate.js
 Enter your mnemonic phrase or xpub key:xpub6ASuArnXKPbfEVRpCesNx4P939HDXENHkksgxsVG1yNp9958A33qYoPiTN9QrJmWFa2jNLdK84bWmyqTSPGtApP8P7nHUYwxHPhqmzUyeFG
 Generating addresses for pubkey: xpub6ASuArnXKPbfEVRpCesNx4P939HDXENHkksgxsVG1yNp9958A33qYoPiTN9QrJmWFa2jNLdK84bWmyqTSPGtApP8P7nHUYwxHPhqmzUyeFG
-0/0: 195EkFatkMf65BiCFrr1LMFAuquxx6JcJQ
 0/1: 1LtD46KjEZcr4b28JJ5AoNHDE1eAtuWjSX
 0/2: 1HjoBCnJxuuJTG5TVXAp8pQvKGY77d6AtE
 0/3: 1NntKK9xAeNFgsbwvHouFWEiJrozGUjeHp
@@ -50,6 +49,47 @@ Generating addresses for pubkey: xpub6ASuArnXKPbfEVRpCesNx4P939HDXENHkksgxsVG1yN
 0/7: 1NL8LB6VXuqEFv3cbEHXS767mwjnc1oqab
 0/8: 1Firydd61wghVfb1YxR9wQwCiPjFJdtd2H
 0/9: 12CJyHdCAvLDbCbnNe8S6ZCYN8Wc9LtvkW
+````
+
+## Generate many Bitcoin addresses from multisig wallet public keys
+
+Use node utils/multisig.js command. 
+It generates many addresses from xpub public keys for multisig wallet
+
+````
+$ node utils/multisig.js
+  Enter public keys one by one, and press ENTER at the end
+  Enter public key #0:
+  xpub.....
+  Enter public key #1:
+  xpub.....
+  Enter public key #2:
+  xpub.....
+  Enter public key #3:
+  xpub.....
+  Enter public key #4:
+  xpub.....
+  Enter public key #5:
+  
+  Enter number of approvals (1-5):
+  3
+  ---------------------------------------
+  Multisig 3 out of 5
+  pubkey#0: xpub...
+  pubkey#1: xpub...
+  pubkey#2: xpub...
+  pubkey#3: xpub...
+  pubkey#4: xpub...
+  0/1: 3PdKivJG77792M6FonEgNQ47nNmqpxQWVP
+  0/2: 3Cw98SegHx59s8KuYjAhQa6yaaazFe1YGa
+  0/3: 3Qyuyu5AwHRtuM2H2ReXSMhMgTxUxAVkTj
+  0/4: 35EUuwususLQWHX3KS44EnC7ftd6unrjg6
+  0/5: 3FLUtTytdtpXdQX1udtCpEYsG9Jz2E2Gqu
+  0/6: 33sdsdd32uXSqSBK8BTesbcgxG2pmL3fuV
+  0/7: 39kHhahG1fxHksrURrhtqenUnvDsTrUpmZ
+  0/8: 3Gdsdsddd43wsfkshqaZiXzjXST6V4djHK
+  0/9: 3QHwsdru4dh4gs3AZMphwduQFUcn4jrMSJ
+
 ````
 
 ## Generate random Ethereum wallet address and key
