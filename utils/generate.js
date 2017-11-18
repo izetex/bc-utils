@@ -14,7 +14,7 @@ rl.question('Enter your mnemonic phrase or xpub key:', function(mnemonic){
         var hdNode = bitcoin.HDNode.fromBase58(mnemonic);
         console.log("Generating addresses for pubkey: "+ mnemonic);
 
-        for(i=0;i<10;i++){
+        for(i=1;i<10;i++){
             var path = '0/'+i;
             var key1 = hdNode.derivePath(path);
             console.log(path + ": "+key1.keyPair.getAddress());
