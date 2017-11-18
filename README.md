@@ -1,4 +1,4 @@
-# Utilities for blockhain usage
+# Utilities for Generating Bitcoin and Ethereum Wallet addresses
 
 ## Installation
 
