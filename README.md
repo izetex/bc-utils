@@ -12,11 +12,11 @@ $ npm install
 
 ## Generate many Bitcoin addresses from mnemonics
 
-Use node utils/generate.js command. 
+Use node utils/generate_btc.js command. 
 It generates many addresses from mnemonics
 
 ````
-$ node utils/generate.js
+$ node utils/generate_btc.js
 Enter your mnemonic phrase or xpub key:traffic used dial lens keen birth surprise clean rookie horse jar fiber
 Generating addresses for mnemonics: traffic used dial lens keen birth surprise clean rookie horse jar fiber
 35oWRUGEbpyCYkQPD5mrjU3YzVmjNBZw3G
@@ -33,11 +33,11 @@ Generating addresses for mnemonics: traffic used dial lens keen birth surprise c
 
 ## Generate many Bitcoin addresses from xpub Public key
 
-Use node utils/generate.js command. 
+Use node utils/generate_btc.js command. 
 It generates many addresses from xpub public key
 
 ````
-$ node utils/generate.js
+$ node utils/generate_btc.js
 Enter your mnemonic phrase or xpub key:xpub6ASuArnXKPbfEVRpCesNx4P939HDXENHkksgxsVG1yNp9958A33qYoPiTN9QrJmWFa2jNLdK84bWmyqTSPGtApP8P7nHUYwxHPhqmzUyeFG
 Generating addresses for pubkey: xpub6ASuArnXKPbfEVRpCesNx4P939HDXENHkksgxsVG1yNp9958A33qYoPiTN9QrJmWFa2jNLdK84bWmyqTSPGtApP8P7nHUYwxHPhqmzUyeFG
 0/1: 1LtD46KjEZcr4b28JJ5AoNHDE1eAtuWjSX
@@ -91,6 +91,28 @@ $ node utils/multisig.js
   0/9: 3QHwsdru4dh4gs3AZMphwduQFUcn4jrMSJ
 
 ````
+
+## Generate many Ethereum addresses from mnemonics
+
+Use node utils/generate_eth.js command. 
+It generates many addresses from mnemonics
+
+````
+$ node utils/generate_eth.js
+Enter your mnemonic phrase or xpub key:traffic used dial lens keen birth surprise clean rookie horse jar fiber
+Generating addresses for mnemonics: traffic used dial lens keen birth surprise clean rookie horse jar fiber
+0/0: 0xdfa5295c577aeb539f77b5ed5531298b468fa68d
+0/1: 0xa0f522fc6780ce2d5668c73444455aba369afd30
+0/2: 0x4b90457757935f49768d72970a472e4998bbc31d
+0/3: 0xe83eef5c126b7362f41bf2c674a516385baad2c9
+0/4: 0x2983e802a1a7e4edc7556b7c89b33fec6c0cee63
+0/5: 0x987083ac110f7388d167c677a3a4bd66cc3ac758
+0/6: 0x5ffc138ca8a5dafc562586db5c759dfab1317cf3
+0/7: 0x635132d2fb68e3801e48441bb6499fff410dd55b
+0/8: 0xeb89bc400111f3b10e34b4403d1a39c20cd4457b
+0/9: 0x4b643f5d30b4d7712c514b5381b1583d3bb849ca
+````
+
 
 ## Generate random Ethereum wallet address and key
 
